@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Parallel Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="SafariTest(failed)">
+    <parameter name="browserName" value="Safari"/>
+    <parameter name="version" value="latest"/>
+    <parameter name="platform" value="MacOS Catalina"/>
+    <classes>
+      <class name="diyLambda.LoginLT">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- diyLambda.LoginLT -->
+    </classes>
+  </test> <!-- SafariTest(failed) -->
+</suite> <!-- Failed suite [Parallel Test Suite] -->
