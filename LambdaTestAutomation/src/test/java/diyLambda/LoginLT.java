@@ -65,13 +65,8 @@ public class LoginLT extends Elements {
         linkbtn(goToEvent);
 
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
-
         // Switch to the new tab
-        driver.switchTo().window(tabs.get(1)); // Assuming the new tab is the second one
-
-        // Now you can perform actions in the new tab
-
-        // For example, you can get the URL of the new tab
+        driver.switchTo().window(tabs.get(1)); 
         String newTabUrl = driver.getCurrentUrl();
         System.out.println("URL of the new tab: " + newTabUrl);
 
