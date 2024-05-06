@@ -83,7 +83,7 @@ public class LoginLT extends Elements {
         text(emailFront, "shailendra@dreamcast.co");
         linkbtn(saveForm);
         Thread.sleep(3000);
-        linkbtn(checkout);
+       // linkbtn(checkout);
 
         Thread.sleep(5000);
         driver.quit();
